@@ -34,7 +34,7 @@
 
 html {
     scroll-behavior: smooth;
-	scroll-snap-type: y proximity;
+    scroll-snap-type: y proximity;
     cursor: url(../assets/cursor.png) 0 0, auto;
 }
 
@@ -72,24 +72,24 @@ body {
 }
 
 .menu {
-	background-color: var(--bgc);
+    background-color: var(--bgc);
     border: double 4pt var(--textc);
 
-	width: 530px;
-    height: 860px;
+    width: 530px;
+    height: 850px;
 
     margin-top: 140px;
-    margin-bottom: 110px;
-	margin-right: 670px;
+    margin-bottom: 120px;
+    margin-right: 670px;
     margin-left: 4px;
 
-	font-size: 1.2em;   /* make overall font bigger */
+    font-size: 1.2em;   /* make overall font bigger */
     z-index: 10;
 }
 
 .link {
-    cursor:  url(../assets/cursor_clicked.png) 0 0, auto;
-    color:rgb(198, 137, 226);
+    cursor: url(../assets/cursor_clicked.png) 0 0, auto;
+    color: rgb(198, 137, 226);
     text-decoration: underline 0.05em rgb(198, 137, 226);
     text-underline-offset: 0.15em;
     transition: text-decoration-color 200ms, text-underline-offset 200ms;
@@ -219,10 +219,10 @@ body {
 
 footer {
     text-align: center;
-	color: var(--textc);
+    color: var(--textc);
     font-size: 1.4em;
-	letter-spacing: 0.7ch;
-	padding: 2ch;
+    letter-spacing: 0.7ch;
+    padding: 2ch;
 
     -webkit-user-select: none;
     -khtml-user-select: none;
