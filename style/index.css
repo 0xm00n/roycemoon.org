@@ -143,12 +143,12 @@ pre {
 }
 
 .pic-container:hover .img {
-    transform: translateY(0) scale(0.9);
+    transform: translateY(0) scale(1.2);
 }
 
 .me-img {
     left: 22px;
-    top: 178px;
+    top: 182px;
     width: 340px;
     -webkit-user-select: none;
     -khtml-user-select: none;
