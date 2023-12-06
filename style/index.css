@@ -7,8 +7,8 @@
 
 /* root vars */
 :root {
-    --bgc: #0c0d10;
-    --textc: #e100ff;
+    --bgc: #011627;
+    --textc: #c792ea;
     --empc: white;
     --brdc: var(--empc);
 }
@@ -57,7 +57,7 @@ a {
 
 pre {
     font-family: "basis";
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: var(--textc);
 }
 
