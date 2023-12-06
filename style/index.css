@@ -143,7 +143,7 @@ pre {
 }
 
 .pic-container:hover .img {
-    transform: translateY(0) scale(1.1);
+    transform: translateY(0) scale(0.9);
 }
 
 .me-img {
