@@ -50,7 +50,7 @@ body {
 }
 
 a { 
-    color: #e100ff; 
+    color: #c792ea; 
     text-decoration: none;
     cursor:  url(../assets/cursor_clicked.png) 0 0, auto;
 }
