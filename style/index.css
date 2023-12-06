@@ -46,7 +46,7 @@ body {
     scrollbar-color: var(--brdc) var(--empc);
 
     color: #FEFEFE;
-    background-color: #0c0d10;
+    background-color: #03243e;
 }
 
 a { 
@@ -57,7 +57,7 @@ a {
 
 pre {
     font-family: "basis";
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: var(--textc);
 }
 
