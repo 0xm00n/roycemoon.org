@@ -7,7 +7,7 @@
 
 /* root vars */
 :root {
-    --bgc: #011627;
+    --bgc: #03243e;
     --textc: #c792ea;
     --empc: white;
     --brdc: var(--empc);
