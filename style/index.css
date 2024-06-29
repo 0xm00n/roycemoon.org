@@ -1,9 +1,7 @@
-
 @font-face {
     font-family: "basis";
     src: url(../assets/basis33/basis33.ttf);
 }
-
 
 /* root vars */
 :root {
@@ -12,7 +10,6 @@
     --empc: white;
     --brdc: var(--empc);
 }
-
 
 ::-webkit-scrollbar {
     width: 4px;
@@ -34,7 +31,7 @@
 
 html {
     scroll-behavior: smooth;
-	scroll-snap-type: y proximity;
+    scroll-snap-type: y proximity;
     cursor: url(../assets/cursor.png) 0 0, auto;
 }
 
@@ -52,27 +49,44 @@ body {
 a { 
     color: #c792ea; 
     text-decoration: none;
-    cursor:  url(../assets/cursor_clicked.png) 0 0, auto;
+    cursor: url(../assets/cursor_clicked.png) 0 0, auto;
 }
 
-pre {
-    font-family: "basis";
-    font-size: 1.2em;
-    color: var(--textc);
+.nav-bar {
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+.divider {
+    text-align: center;
+} 
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	
     margin: 5px;
 }
 
+.content {
+    border: 1px solid var(--textc);
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+
+    font-family: "basis";
+    font-size: 1.2em;
+    color: var(--textc);
+}
+
+.content p {
+    margin: 10px 0;
+}
+
 .link {
-    cursor:  url(../assets/cursor_clicked.png) 0 0, auto;
-    color:rgb(198, 137, 226);
+    cursor: url(../assets/cursor_clicked.png) 0 0, auto;
+    color: rgb(198, 137, 226);
     text-decoration: underline 0.05em rgb(198, 137, 226);
     text-underline-offset: 0.15em;
     transition: text-decoration-color 200ms, text-underline-offset 200ms;
@@ -82,7 +96,6 @@ pre {
     text-decoration-color: rgb(198, 137, 226);
     text-underline-offset: 0.1em;
 }
-
 
 .pic-container {
     border-radius: 50%;
@@ -157,3 +170,5 @@ pre {
     -o-user-select: none;
     user-select: none;
 }
+
+
