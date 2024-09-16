@@ -97,3 +97,16 @@ a {
     text-decoration-color: rgb(198, 137, 226);
     text-underline-offset: 0.1em;
 }
+
+@media (max-width: 980px) {
+    .container {
+      width: 95%;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+  
+    .content {
+      width: 100%;
+      font-size: 1.0em;
+    }
+}
