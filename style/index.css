@@ -99,10 +99,9 @@ pre {
 }
 
 @media (max-width: 980px) {
-    .content {
-        padding: 1.2rem;
+    .content p {
         font-size: 1.2em;
-        width: min(95%, 900px);
+        padding-left: 1rem;
     }
     
     pre {
@@ -110,7 +109,7 @@ pre {
         line-height: 1.2;
         tab-size: 4;
         -webkit-font-smoothing: none;
-        font-size: 0.7em;
+        font-size: 0.3em;
         max-width: 100%;
         overflow-x: auto;
         margin: 1rem auto;
