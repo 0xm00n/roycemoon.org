@@ -65,8 +65,12 @@ pre {
 }
 
 .nav-bar {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;  /* Consistent spacing between items */
     width: 100%;
+    flex-wrap: nowrap;  /* Prevent wrapping */
 }
 
 .content {
@@ -99,9 +103,13 @@ pre {
 }
 
 @media (max-width: 980px) {
+    .nav-bar {
+        font-size: 0.5em; 
+        gap: 0.3rem; 
+    }
     .content p {
-        font-size: 1.2em;
-        padding-left: 1rem;
+        font-size: 0.6em;
+        padding-left: 0.6rem;
     }
     
     pre {
@@ -109,7 +117,7 @@ pre {
         line-height: 1.2;
         tab-size: 4;
         -webkit-font-smoothing: none;
-        font-size: 0.3em;
+        font-size: 0.4em;
         max-width: 100%;
         overflow-x: auto;
         margin: 1rem auto;
