@@ -53,17 +53,6 @@ a {
     cursor: url(../assets/cursor_clicked.png) 0 0, auto;
 }
 
-pre {
-    white-space: pre;
-    line-height: 1.2;
-    tab-size: 4;
-    -webkit-font-smoothing: none;
-    font-size: 0.7em;
-    max-width: 100%;
-    overflow-x: auto;
-    margin: 1rem auto;
-}
-
 .nav-bar {
     display: flex;
     justify-content: center;
@@ -79,7 +68,7 @@ pre {
     width: min(90%, 900px);
     margin: 0 auto;
     font-family: "basis";
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: var(--textc);
     display: flex;
     flex-direction: column;
@@ -88,10 +77,14 @@ pre {
 }
 
 .content p {
-    margin: 5px 0;
+    margin: 5px auto;
     width: 100%;
-    padding-left: 1rem;
+    text-align: left;
     max-width: 750px;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 .footer {
@@ -110,16 +103,5 @@ pre {
     .content p {
         font-size: 0.6em;
         padding-left: 0.6rem;
-    }
-    
-    pre {
-        white-space: pre;
-        line-height: 1.2;
-        tab-size: 4;
-        -webkit-font-smoothing: none;
-        font-size: 0.4em;
-        max-width: 100%;
-        overflow-x: auto;
-        margin: 1rem auto;
     }
 }
