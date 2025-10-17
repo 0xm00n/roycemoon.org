@@ -41,6 +41,7 @@
         const img = document.querySelector('.center-art');
         const caption = document.querySelector('.art-caption');
 
+        // Mouse events for desktop
         img.addEventListener('mouseenter', () => {
             caption.style.opacity = '1';
         });
@@ -52,6 +53,26 @@
         img.addEventListener('mousemove', (e) => {
             caption.style.left = (e.clientX + 15) + 'px';
             caption.style.top = (e.clientY + 15) + 'px';
+        });
+
+        // Touch events for mobile
+        img.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            const touch = e.touches[0];
+            caption.style.left = (touch.clientX + 15) + 'px';
+            caption.style.top = (touch.clientY + 15) + 'px';
+            caption.style.opacity = '1';
+        });
+
+        img.addEventListener('touchend', () => {
+            caption.style.opacity = '0';
+        });
+
+        // Hide caption when touching anywhere else
+        document.addEventListener('touchstart', (e) => {
+            if (e.target !== img) {
+                caption.style.opacity = '0';
+            }
         });
     </script>
 </body>
