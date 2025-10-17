@@ -21,42 +21,38 @@
 
     <div class="pure-g main-content">
         <div class="pure-u-1">
-            <h2>Hi I'm Royce,</h2>
-            <p> 
-                Founder @ <a href="https://spiralworks.ai/" target="_blank"><b>Spiral Works</b></a>.
-            </p>
+            <div class="art-container">
+                <img src="./assets/thebanquet.webp" alt="The Banquet" class="center-art">
+                <div class="art-caption">René Magritte's "The Banquet" (1958). It really stuck with me when I saw it at the Art Institute of Chicago. I took this pic :)</div>
+            </div>
+            <h1>Royce Moon</h1><br>
             <p>
-                Reach out to me at royce[at]spiralworks[dot]ai
+                I'm the founder of <a href="https://spiralworks.ai/" target="_blank"><b>Spiral Works</b></a>, an AI research lab building creative superintelligence.
             </p>
-
-            <h3>Interests:</h3>
-            <ul class="content-list">
-                <li>Philosophy of science</li>
-                <li>Intelligence + formalizing human intuitions</li>
-                <li>Computational creativity</li>
-                <li>Category theory</li>
-                <li>Culture theory</li>
-                <li>Startups</li>
-            </ul>
-
-            <h3>Background:</h3>
-            <ul class="content-list background-list">
-                <li>Made $$ in high school scaling software to find 0days</li>
-                <li>Gravitational astrophysics + deep learning in high school @ CERN, Theoretical Physics Dept.</li>
-                <li>Founding Head of Research @ <a href="https://www.quantillinois.com/" target="_blank">Quant Illinois</a>, student run HFT + quant firm at UIUC</li>
-                <li>ML, New Biological Entities R&D Group @ AbbVie</li>
-                <li>Did some quant research</li>
-                <li>Speech recognition in healthcare @ UPenn</li>
-                <li>CS @ UMich</li>
-            </ul>
+            <p> 
+            </p>
         </div>
-    </div>
-
-    <div class="footer">
-        <p>built using only <a href="https://purecss.io/" target="_blank">pure.css</a> + html5</p>
     </div>
 
     <!-- GoatCounter analytics -->
     <script data-goatcounter="https://royce.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+    <script>
+        const img = document.querySelector('.center-art');
+        const caption = document.querySelector('.art-caption');
+
+        img.addEventListener('mouseenter', () => {
+            caption.style.opacity = '1';
+        });
+
+        img.addEventListener('mouseleave', () => {
+            caption.style.opacity = '0';
+        });
+
+        img.addEventListener('mousemove', (e) => {
+            caption.style.left = (e.clientX + 15) + 'px';
+            caption.style.top = (e.clientY + 15) + 'px';
+        });
+    </script>
 </body>
 </html>

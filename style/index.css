@@ -1,6 +1,9 @@
 @font-face {
-    font-family: "basis";
-    src: url(../assets/basis33/basis33.ttf);
+    font-family: "Martian Grotesk";
+    font-display: swap;
+    src: url(../assets/MartianGrotesk-VFVF.woff2) format('woff2');
+    font-weight: 100 1000;
+    font-stretch: 75% 200%;
 }
 
 /* Theme only - Pure.css handles layout */
@@ -14,10 +17,11 @@ html {
 }
 
 body {
-    font-family: "basis", sans-serif;
+    font-family: "Martian Grotesk", sans-serif;
+    font-weight: 200;
     color: var(--textc);
     background-color: var(--bgc);
-    font-size: 1.3em;
+    font-size: 1em;
     padding: 2rem;
     min-height: 100vh;
     box-sizing: border-box;
@@ -26,14 +30,21 @@ body {
 }
 
 /* Link styling */
-a { 
+a {
     color: var(--textc);
     cursor: url(../assets/cursor_clicked.png) 0 0, auto;
-    text-decoration: underline;
+    text-decoration: none;
+    padding: 0.2em 0.3em;
+    border: 1px solid var(--textc);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: inline-block;
 }
 
 a:hover {
-    color: #FEFEFE;
+    color: var(--bgc);
+    background-color: var(--textc);
+    box-shadow: 0 2px 8px rgba(199, 146, 234, 0.4);
 }
 
 /* Pure.css menu overrides for theme */
@@ -45,37 +56,18 @@ a:hover {
 
 .pure-menu-link {
     color: var(--textc);
-    text-decoration: underline;
+    text-decoration: none;
+    border: 1px solid var(--textc);
+    border-radius: 4px;
+    padding: 0.3em 0.5em;
+    transition: all 0.2s ease;
 }
 
 .pure-menu-link:hover,
 .pure-menu-link:focus {
-    background-color: transparent;
-    color: #FEFEFE;
-}
-
-/* Typography colors */
-h2, h3 {
-    color: var(--textc);
-}
-
-/* List bullets - only for content lists, not navigation */
-.content-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.content-list li {
-    position: relative;
-    padding-left: 1.5em;
-    margin: 0.3em 0;
-}
-
-.content-list li:before {
-    content: "‣";
-    position: absolute;
-    left: 0;
-    color: var(--textc);
+    background-color: var(--textc);
+    color: var(--bgc);
+    box-shadow: 0 2px 8px rgba(199, 146, 234, 0.4);
 }
 
 /* Remove scrollbars */
@@ -90,35 +82,58 @@ h2, h3 {
 }
 
 .pure-g > div {
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
 }
 
-/* Main content grows to push footer down */
 .main-content {
     flex: 1;
 }
 
 .main-content > div {
-    padding-left: 150px;
+    padding: 0;
 }
 
-/* Footer styling */
-.footer {
-    margin-top: auto;
-    padding-top: 4rem;
-    text-align: center;
-    font-size: 0.9em;
+.center-art {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    position: relative;
+    cursor: none;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 4px;
-    background-color: #000000;
+.art-container {
+    position: relative;
+    display: inline-block;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: var(--textc);
+.art-caption {
+    position: fixed;
+    background: rgba(3, 36, 62, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(199, 146, 234, 0.3);
+    color: var(--textc);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1000;
+    max-width: 300px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 1rem;
 }
 
 /* Selection */
