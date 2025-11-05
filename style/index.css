@@ -22,11 +22,12 @@ body {
     color: var(--textc);
     background-color: var(--bgc);
     font-size: 1em;
-    padding: 2rem;
-    min-height: 100vh;
+    padding: 1.5rem;
+    height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* Link styling */
@@ -51,7 +52,7 @@ a:hover {
 .pure-menu {
     background-color: transparent;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .pure-menu-link {
@@ -95,10 +96,12 @@ a:hover {
 }
 
 .center-art {
-    max-width: 500px;
+    max-width: 400px;
+    max-height: 40vh;
     width: 100%;
     height: auto;
-    margin: 0 auto 2rem auto;
+    object-fit: contain;
+    margin: 0 auto 1rem auto;
     display: block;
     user-select: none;
     -webkit-user-select: none;
@@ -132,8 +135,13 @@ a:hover {
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: 1rem;
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+p {
+    margin: 0.5rem 0;
 }
 
 /* Selection */
