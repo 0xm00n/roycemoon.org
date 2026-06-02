@@ -47,6 +47,23 @@ a:hover {
     box-shadow: 0 2px 8px rgba(199, 146, 234, 0.4);
 }
 
+/* Inline text links within body copy (no box) */
+.inline-link {
+    display: inline;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.inline-link:hover {
+    color: var(--textc);
+    background-color: transparent;
+    box-shadow: none;
+    text-decoration: none;
+}
+
 /* Pure.css menu overrides for theme */
 .pure-menu {
     background-color: transparent;
@@ -152,6 +169,14 @@ h1 {
     height: 80px;
     object-fit: contain;
     border-radius: 8px;
+}
+
+/* Bio paragraph: centered column, left-aligned text */
+.bio {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    line-height: 1.5;
 }
 
 /* Now page content */
