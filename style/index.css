@@ -179,6 +179,10 @@ h1 {
     line-height: 1.5;
 }
 
+.bio li + li {
+    margin-top: 0.75em;
+}
+
 /* Now page content */
 .now-content {
     display: inline-block;
